@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tasksListBox = new ListBox();
             descriptionTextBox = new TextBox();
             addTaskButton = new Button();
@@ -85,12 +86,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(255, 128, 0);
             ClientSize = new Size(384, 361);
             Controls.Add(toggleCompletionButton);
             Controls.Add(removeTaskButton);
             Controls.Add(addTaskButton);
             Controls.Add(descriptionTextBox);
             Controls.Add(tasksListBox);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
