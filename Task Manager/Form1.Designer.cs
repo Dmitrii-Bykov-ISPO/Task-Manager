@@ -44,6 +44,7 @@
             tasksListBox.Name = "tasksListBox";
             tasksListBox.Size = new Size(200, 199);
             tasksListBox.TabIndex = 0;
+            tasksListBox.DrawItem += tasksListBox_DrawItem;
             // 
             // descriptionTextBox
             // 

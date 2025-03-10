@@ -13,6 +13,7 @@ namespace TaskManager
         {
             Tasks = new List<Task>();
             LoadTasks();
+            Console.WriteLine("Загрузка успешна");
         }
         public void AddTask(string description)
         {
